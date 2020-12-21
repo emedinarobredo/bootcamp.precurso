@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    anchuraTexto = prompt("Cual es la anchura del rectangulo"); // Lo que el usuario escriba en pantalla pasará a ser el valor de la variable edadTexto
+    console.log(typeof (anchuraTexto)); //Veremos que nos muestra que es un string
+    // Ahora que tenemos la anchura en formato texto, pasemoslo a un entero
+    let anchura;
+    anchura = parseInt(anchuraTexto);
+    console.log(typeof (anchura)); //Veremos que nos muestra que es un número
+
+    alturaTexto = prompt("Cual es la altura del rectangulo"); // Lo que el usuario escriba en pantalla pasará a ser el valor de la variable edadTexto
+    console.log(typeof (alturaTexto)); //Veremos que nos muestra que es un string
+    // Ahora que tenemos el área en formato texto, pasemoslo a un entero
+    let altura;
+    altura = parseInt(alturaTexto);
+    console.log(typeof (altura)); //Veremos que nos muestra que es un número
+    console.log("El area del rectángulo es de " + anchura * altura ); 
+    </script>
+</body>
+</html>
+
