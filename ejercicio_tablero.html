@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo For 3</title>
+</head>
+
+<body>
+    <script>
+      function dibujar_tablero() {
+
+let number = parseInt(window.prompt("Introduzca un número del 1 al 10:"))
+let width = number;
+let height = number;
+let next
+for (i = 0; i < height; i++) {
+    if (i % 2 === 0) next = "O"
+    else next = "X";
+    row = "";
+    for (j = 0; j < width; j++) {
+        row += next;
+        if (next === "O") {
+            next = "X";
+        } else {
+            next = "O";
+        }
+    }
+    console.log(row);
+}
+}
+
+dibujar_tablero();
+
+    </script>
+</body>
+
+</html>
