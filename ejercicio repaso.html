@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+         * Escribe un programa que dada una palabra en minúsculas, muestre en la consola la mitad de la palabra en minúsculas y la otra mitad en mayúsculas.
+         * Pistas:
+         * 1. Debes utilizar al menos 3 métodos de los vistos anteriormente
+         * 2. La mitad de una palabra contiene mitad de sus caracteres, para ello necesitarás saber cuantos caracteres tiene la palabra
+         * 3. Para poder modificar la mitad de la palabra (mayúsculas), necesitarás primero obtener una cadena que sólo tenga esa parte
+         * 4. Una vez que tengamos la mitad de la palabra en mayúsculas, tendrás que reemplazar una subcadena por otra
+         */
+
+           /*Primero declaramos una variable que almacena una cadena de texto, este será el string de referencia, del que queremos conocer 
+            el número de caracteres que contiene*/
+            let nombre = "panoramix";
+
+            /*A continuación, utilizando como referencia dicha variable string obtenemos el número de caracteres que componen la cadena de 
+             * texto, y lo hacemos a través de la propiedad  .length que nos devuelve el número  de caracteres, por eso almacenamos el resultado 
+            
+             * La sintaxis es la siguiente --> nombre de la variable que almacena el string de referencia, punto (. ) y el nombre de la 
+             * propiedad length, que nos devuelve el número de caracteres que contiene ese string en concreto
+             */
+
+            let numeroLetras = nombre.length;
+
+            console.log("El nombre tiene " + numeroLetras + " caracteres");
+
+            let subcadena = nombre.substring(0, 4);
+            let palabraMayus = subcadena.toUpperCase();
+        //Y por último, mostramos por consola el valor de la variable dónde almacenamos la cadena en mayúsculas.
+        console.log(palabraMayus);
+
+        let reemplazado = nombre.replace(subcadena, palabraMayus);
+        console.log(reemplazado);
+    </script>
+</body>
+
+</html>
